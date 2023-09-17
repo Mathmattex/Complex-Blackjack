@@ -220,7 +220,7 @@ function getHandValue(handParam) {
 
     var bestHand = total.slice();
     for (e = 0; e < aceBonuses.length; e++) {
-        aceCase = [total[0] + aceBonuses[e][0], total[0] + aceBonuses[e][1]]
+        aceCase = [total[0] + aceBonuses[e][0], total[1] + aceBonuses[e][1]]
         if (betterValue(bestHand ,aceCase ) == 2) {
             bestHand = aceCase.slice();
         }
